@@ -1,4 +1,4 @@
-package BaegJun;
+package practice;
 
 import java.util.Scanner;
 
