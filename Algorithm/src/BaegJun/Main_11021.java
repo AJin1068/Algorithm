@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main_10950 {
+public class Main_11021 {
 
 	public static void main(String[] args) throws Exception {
 
@@ -17,6 +17,7 @@ public class Main_10950 {
 
 		int a = 0;
 		int b = 0;
+		int num = 1;
 
 		for (int i = 1; i <= cnt; i++) {
 
@@ -25,7 +26,8 @@ public class Main_10950 {
 			a = Integer.parseInt(st.nextToken());
 			b = Integer.parseInt(st.nextToken());
 
-			sb.append(a + b).append("\n");
+			sb.append("Case #").append(num).append(": ").append(a + b).append("\n");
+			num++;
 
 		}
 

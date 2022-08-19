@@ -2,33 +2,31 @@ package BaegJun;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main_10950 {
+public class Main_10952 {
 
 	public static void main(String[] args) throws Exception {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
+		StringTokenizer st;
+		String str;
 
-		int cnt = Integer.parseInt(br.readLine());
+		while ((str = br.readLine()) != null) {
 
-		int a = 0;
-		int b = 0;
+			st = new StringTokenizer(str, " ");
+			int a = Integer.parseInt(st.nextToken());
 
-		for (int i = 1; i <= cnt; i++) {
+			if (a == 0) {
+				break;
+			}
 
-			st = new StringTokenizer(br.readLine());
-
-			a = Integer.parseInt(st.nextToken());
-			b = Integer.parseInt(st.nextToken());
-
+			int b = Integer.parseInt(st.nextToken());
 			sb.append(a + b).append("\n");
 
 		}
+		System.out.print(sb);
 
-		System.out.println(sb);
 	}
 }

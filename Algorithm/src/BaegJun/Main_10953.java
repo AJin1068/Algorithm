@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main_10950 {
+public class Main_10953 {
 
 	public static void main(String[] args) throws Exception {
 
@@ -20,7 +20,7 @@ public class Main_10950 {
 
 		for (int i = 1; i <= cnt; i++) {
 
-			st = new StringTokenizer(br.readLine());
+			st = new StringTokenizer(br.readLine(), ",");
 
 			a = Integer.parseInt(st.nextToken());
 			b = Integer.parseInt(st.nextToken());
