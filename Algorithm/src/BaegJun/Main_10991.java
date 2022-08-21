@@ -3,25 +3,24 @@ package BaegJun;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
-public class Main_2441 {
+public class Main_10991 {
 
 	public static void main(String[] args) throws Exception, IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 
-		int cnt = Integer.parseInt(br.readLine());
+		int N = Integer.parseInt(br.readLine());
+		int gap = N - 1;
 
-		for (int i = cnt; i >= 1; i--) {
+		for (int i = 1; i <= N; i++) {
 
-			sb.append(" ".repeat(cnt - i)).append("*".repeat(i)).append("\n");
+			sb.append(" ".repeat(gap)).append("* ".repeat(i - 1)).append("*\n");
+			gap--;
 		}
 
 		System.out.println(sb);
-
 	}
+
 }
