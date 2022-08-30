@@ -23,9 +23,9 @@ public class Main_10992 {
 			sb.append(" ".repeat(gap)).append("*").append(" ".repeat(2 * i - 1)).append("*\n");
 			gap--;
 		}
-		
-		if(N!=1) {
-			
+
+		if (N != 1) {
+
 			sb.append("*".repeat(2 * N - 1));
 		}
 
